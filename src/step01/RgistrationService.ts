@@ -3,6 +3,7 @@ import SalesRep from "./entities/SalesRep";
 import User from "./entities/User";
 import SalesRepRepository from "./repositories/SalesRepRepository";
 import { UserRepository } from "../repositories/UserRepository";
+import PhoneNumber from "./dp/PhoneNumber";
 
 
 export default class RegistrationService {
@@ -11,14 +12,15 @@ export default class RegistrationService {
     private salesRepo: SalesRepRepository;
     private userRepo: UserRepository;
 
-    public register(name: string, phone: string): User {
+    public register(name: string, phone: PhoneNumber): User {
         if (name === null || name.length === 0) {
             throw new Error()
         }
 
-        if (phone === null || !this.isValidPhoneNumber(phone)) {
-            throw new Error()
-        }
+        // 省略
+        // if (phone === null || !this.isValidPhoneNumber(phone)) {
+        //     throw new Error()
+        // }
 
         // 获取手机号归属地和运营商编号
         // 通过编号查找区域内的SalesRepo
