@@ -1,6 +1,6 @@
 
-import PhoneNumber from "../entities/PhoneNumber";
-import User from "../vo/User";
+import PhoneNumber from "../dp/PhoneNumber";
+import User from "../dp/User";
 import UserRepository from "./UserRepository";
 
 
@@ -16,7 +16,7 @@ export default class UserRepositoryImpl implements UserRepository {
     find(id): User {
         // 具体数据库实现
 
-        return new User()
+        return num
     }
 
     // find(phone: PhoneNumber): User {

@@ -1,10 +1,12 @@
 import PhoneNumber from "../dp/PhoneNumber";
-import SalesRep from "../vo/SalesRep";
+import SalesRep from "../dp/SalesRep";
 
 
 export default class SalesRepRepository {
 
-    findRepo(areaCode, operatorCode) {
+    findRepo(phone: PhoneNumber) {
+
+
         return new SalesRep()
     }
 
