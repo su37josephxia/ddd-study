@@ -20,4 +20,5 @@
     - 让隐性的上下文显性化
     - 封装多对象行为
 - step02 搞清 Entity 、Repository 、Domain Service 关系
+  -
   - Repository 负责具体数据库处理

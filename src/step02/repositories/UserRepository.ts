@@ -1,5 +1,5 @@
-import PhoneNumber from "../entities/PhoneNumber";
-import User from "../vo/User";
+import PhoneNumber from "../dp/PhoneNumber";
+import User from "../dp/User";
 
 export default interface UserRepository {
     save(user: User): User
