@@ -1,4 +1,4 @@
-import PhoneNumber from "../dp/PhoneNumber";
+import PhoneNumber from "../dp/PhoneNumber.vo";
 import SalesRep from "../entities/SalesRep";
 
 

@@ -3,7 +3,7 @@ import SalesRep from "./entities/SalesRep";
 import User from "./entities/User";
 import SalesRepRepository from "./repositories/SalesRepRepository";
 import { UserRepository } from "../repositories/UserRepository";
-import PhoneNumber from "./dp/PhoneNumber";
+import PhoneNumber from "./dp/PhoneNumber.vo";
 
 
 export default class RegistrationService {
