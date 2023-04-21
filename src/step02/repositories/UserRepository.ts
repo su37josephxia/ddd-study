@@ -1,9 +1,9 @@
-import PhoneNumber from "../dp/PhoneNumber";
-import User from "../dp/User";
+import PhoneNumber from "../dp/PhoneNumber.vo";
+import User from "../dp/User.entity";
 
 export default interface UserRepository {
     save(user: User): User
-    find(id): User
-    // find(phone: PhoneNumber): User
+    findById(id): User
+    findByPhoneNumber(phone: PhoneNumber): User
 }
 

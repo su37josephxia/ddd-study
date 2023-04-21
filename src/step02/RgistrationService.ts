@@ -1,9 +1,9 @@
 
-import SalesRep from "./dp/SalesRep";
-import User from "./dp/User";
+import SalesRep from "./dp/SalesRep.entity";
+import User from "./dp/User.entity";
 import SalesRepRepository from "./repositories/SalesRepRepository";
 import UserRepository from "./repositories/UserRepository";
-import PhoneNumber from "./dp/PhoneNumber";
+import PhoneNumber from "./dp/PhoneNumber.vo";
 
 
 export default class RegistrationService {

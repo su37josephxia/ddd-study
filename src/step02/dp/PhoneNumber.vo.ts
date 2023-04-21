@@ -15,4 +15,12 @@ export default class PhoneNumber {
     private isValid(number: string): boolean {
         return this.pattern.test(number)
     }
+
+    public getAreaCode() {
+
+    }
+
+    public getOperatorCode() {
+
+    }
 }

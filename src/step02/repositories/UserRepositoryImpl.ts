@@ -1,6 +1,6 @@
 
-import PhoneNumber from "../dp/PhoneNumber";
-import User from "../dp/User";
+import PhoneNumber from "../dp/PhoneNumber.vo";
+import User from "../dp/User.entity";
 import UserRepository from "./UserRepository";
 
 
@@ -13,13 +13,13 @@ export default class UserRepositoryImpl implements UserRepository {
         return user
     }
 
-    find(id): User {
+    findById(id): User {
         // 具体数据库实现
 
-        return num
+        return new User('', new PhoneNumber(''))
     }
 
-    // find(phone: PhoneNumber): User {
-    //     return new User()
-    // }
+    findByPhoneNumber(phone: PhoneNumber): User {
+        return new User('', new PhoneNumber(''))
+    }
 }

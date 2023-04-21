@@ -1,6 +1,6 @@
-import PhoneNumber from "./PhoneNumber"
+import PhoneNumber from "./PhoneNumber.vo"
 import SalesRepRepository from "../repositories/SalesRepRepository";
-import SalesRep from "./SalesRep";
+import SalesRep from "./SalesRep.entity";
 
 export default class User {
     private userId: string
